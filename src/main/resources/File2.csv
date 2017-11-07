@@ -1,0 +1,4 @@
+OrderId,SecurityId,Transaction Code,Symbol,Quantity,Limit Price,Order Instructions
+3,1,BUY,IDEA,2000,10.3,IDEA BUY -B1
+4,2,BUY,AIRTEL,3000,10.1, Airtel Buy -B2
+5,3,SELL,ICICI,1000,10.3, ICICI Buy -B3
