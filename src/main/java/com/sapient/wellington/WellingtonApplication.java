@@ -1,10 +1,5 @@
 package com.sapient.wellington;
 
-import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.CopyOnWriteArrayList;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,15 +7,16 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import com.sapient.wellington.filereader.FileReader;
+import com.sapient.wellington.util.ApplicationConstants;
 
 /**
- *Main class for the application 
+ * Main class for the application
  */
 @SpringBootApplication
 public class WellingtonApplication implements ApplicationRunner {
+
 	@Autowired
 	private FileReader fileReader;
 
@@ -30,8 +26,13 @@ public class WellingtonApplication implements ApplicationRunner {
 		SpringApplication.run(WellingtonApplication.class, args);
 	}
 
+	/**
+	 * Run method to read the command line arguments as input of application
+	 * --file.count=3 --file.path="C:/files/File1.csv,C:/files/File2.csv"
+	 */
 	@Override
-	public void run(ApplicationArguments args) throws Exception {
+	public void run(ApplicationArguments args) {
+		logger.debug("Starting the application....");
 		int noOfFiles = 0;
 		String filePath = null;
 		for (String name : args.getOptionNames()) {
@@ -50,25 +51,14 @@ public class WellingtonApplication implements ApplicationRunner {
 			}
 
 		}
-		//Read the file and begin execution
-		fileReader.readFile(noOfFiles, filePath);
+		// Read the file and begin execution
+		try {
+			fileReader.readFile(noOfFiles, filePath);
+		} catch (Exception e) {
+			logger.debug(e.getMessage());
+			logger.info("Application stopped..");
+			System.exit(10);
+		}
 	}
-	
-	/**
-	 * bean for array blocking queue
-	 * @return
-	 */
-	@Bean(name="queue")
-    public BlockingQueue<String> blockingQueue() {
-        return new ArrayBlockingQueue<String>(1);
-    }
-	
-	/**
-	 * bean for group order cache
-	 * @return
-	 */
-	@Bean(name="groupOrderWarningCache")
-    public List<String> orderWarningCache() {
-		return new CopyOnWriteArrayList<String>();
-    }
+
 }

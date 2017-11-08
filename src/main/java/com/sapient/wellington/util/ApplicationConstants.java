@@ -1,4 +1,4 @@
-package com.sapient.wellington;
+package com.sapient.wellington.util;
 
 public class ApplicationConstants {
 

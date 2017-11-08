@@ -1,0 +1,871 @@
+2017-11-08 15:16:27.969  INFO 8176 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 8176 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:16:27.972 DEBUG 8176 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:16:27.972  INFO 8176 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:16:28.100  INFO 8176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:16:28 IST 2017]; root of context hierarchy
+2017-11-08 15:16:30.228  INFO 8176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:16:30.244  INFO 8176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:16:30.246  INFO 8176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:16:30.417  INFO 8176 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:16:30.418  INFO 8176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2322 ms
+2017-11-08 15:16:30.641  INFO 8176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:16:30.646  INFO 8176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:16:30.646  INFO 8176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:16:30.647  INFO 8176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:16:30.648  INFO 8176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:16:30.812  INFO 8176 --- [main] c.s.wellington.service.GroupingService   : executor for grouping task created=java.util.concurrent.ThreadPoolExecutor@5f031ebd[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2017-11-08 15:16:31.113  INFO 8176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:16:28 IST 2017]; root of context hierarchy
+2017-11-08 15:16:31.183  INFO 8176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:16:31.184  INFO 8176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:16:31.213  INFO 8176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:16:31.213  INFO 8176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:16:31.250  INFO 8176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:16:31.464  INFO 8176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:16:31.534  INFO 8176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:16:31.537 DEBUG 8176 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:16:31.555  INFO 8176 --- [pool-2-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-4 executing the task for order=4
+2017-11-08 15:16:31.556  INFO 8176 --- [pool-2-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-2 executing the task for order=2
+2017-11-08 15:16:31.563  INFO 8176 --- [pool-2-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-5 executing the task for order=5
+2017-11-08 15:16:31.564  INFO 8176 --- [pool-2-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-3 executing the task for order=3
+2017-11-08 15:16:31.564  INFO 8176 --- [pool-2-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-1 executing the task for order=1
+2017-11-08 15:16:31.564  INFO 8176 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:16:31.566  INFO 8176 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:16:31.581  INFO 8176 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.004 seconds (JVM running for 4.479)
+2017-11-08 15:17:11.571  INFO 8092 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 8092 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:17:11.578 DEBUG 8092 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:17:11.578  INFO 8092 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:17:11.666  INFO 8092 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 15:17:11 IST 2017]; root of context hierarchy
+2017-11-08 15:17:13.979  INFO 8092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:17:13.996  INFO 8092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:17:13.998  INFO 8092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:17:14.197  INFO 8092 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:17:14.198  INFO 8092 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2535 ms
+2017-11-08 15:17:14.481  INFO 8092 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:17:14.486  INFO 8092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:17:14.487  INFO 8092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:17:14.487  INFO 8092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:17:14.488  INFO 8092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:17:14.603  INFO 8092 --- [main] c.s.wellington.service.GroupingService   : executor for grouping task created=java.util.concurrent.ThreadPoolExecutor@5ee34b1b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2017-11-08 15:17:15.146  INFO 8092 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 15:17:11 IST 2017]; root of context hierarchy
+2017-11-08 15:17:15.248  INFO 8092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:17:15.252  INFO 8092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:17:15.313  INFO 8092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:17:15.313  INFO 8092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:17:15.378  INFO 8092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:17:15.739  INFO 8092 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:17:15.821  INFO 8092 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:17:15.824 DEBUG 8092 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:17:15.835  INFO 8092 --- [pool-2-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-2 executing the task for order=2
+2017-11-08 15:17:15.837  INFO 8092 --- [pool-2-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-4 executing the task for order=4
+2017-11-08 15:17:15.854  INFO 8092 --- [pool-2-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-1 executing the task for order=1
+2017-11-08 15:17:15.855  INFO 8092 --- [pool-2-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-3 executing the task for order=3
+2017-11-08 15:17:15.855  INFO 8092 --- [pool-2-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-5 executing the task for order=5
+2017-11-08 15:17:19.258  INFO 8092 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:17:19.261  INFO 8092 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 8.186 seconds (JVM running for 8.731)
+2017-11-08 15:17:19.263  INFO 8092 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:18:38.684  INFO 5156 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 5156 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:18:38.687 DEBUG 5156 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:18:38.687  INFO 5156 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:18:38.881  INFO 5156 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:18:38 IST 2017]; root of context hierarchy
+2017-11-08 15:18:40.985  INFO 5156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:18:40.999  INFO 5156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:18:41.000  INFO 5156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:18:41.151  INFO 5156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:18:41.152  INFO 5156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2273 ms
+2017-11-08 15:18:41.310  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:18:41.314  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:18:41.315  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:18:41.315  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:18:41.315  INFO 5156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:18:41.417  INFO 5156 --- [main] c.s.wellington.service.GroupingService   : executor for grouping task created=java.util.concurrent.ThreadPoolExecutor@18230356[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2017-11-08 15:18:41.764  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:18:38 IST 2017]; root of context hierarchy
+2017-11-08 15:18:41.846  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:18:41.849  INFO 5156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:18:41.885  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:18:41.885  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:18:41.929  INFO 5156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:18:42.136  INFO 5156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:18:42.195  INFO 5156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:18:42.198 DEBUG 5156 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:18:42.212  INFO 5156 --- [pool-2-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-1 executing the task for order=1
+2017-11-08 15:18:42.213  INFO 5156 --- [pool-2-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-3 executing the task for order=3
+2017-11-08 15:18:42.213  INFO 5156 --- [pool-2-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-5 executing the task for order=5
+2017-11-08 15:18:42.216  INFO 5156 --- [pool-2-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-4 executing the task for order=4
+2017-11-08 15:18:42.216  INFO 5156 --- [pool-2-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-2 executing the task for order=2
+2017-11-08 15:18:42.217  INFO 5156 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:18:42.219  INFO 5156 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 3.955 seconds (JVM running for 4.374)
+2017-11-08 15:18:42.222  INFO 5156 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:26:12.672  INFO 4672 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 4672 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:26:12.692 DEBUG 4672 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:26:12.692  INFO 4672 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:26:12.819  INFO 4672 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:26:12 IST 2017]; root of context hierarchy
+2017-11-08 15:26:14.980  INFO 4672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:26:15.000  INFO 4672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:26:15.001  INFO 4672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:26:15.189  INFO 4672 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:26:15.190  INFO 4672 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2374 ms
+2017-11-08 15:26:15.373  INFO 4672 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:26:15.377  INFO 4672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:26:15.378  INFO 4672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:26:15.378  INFO 4672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:26:15.378  INFO 4672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:26:15.488  INFO 4672 --- [main] c.s.wellington.service.GroupingService   : executor for grouping task created=java.util.concurrent.ThreadPoolExecutor@60d1a32f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2017-11-08 15:26:15.892  INFO 4672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:26:12 IST 2017]; root of context hierarchy
+2017-11-08 15:26:15.990  INFO 4672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:26:15.992  INFO 4672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:26:16.036  INFO 4672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:26:16.036  INFO 4672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:26:16.075  INFO 4672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:26:16.236  INFO 4672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:26:16.328  INFO 4672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:26:16.331 DEBUG 4672 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:26:16.343  INFO 4672 --- [pool-2-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-4 executing the task for order=4
+2017-11-08 15:26:16.344  INFO 4672 --- [pool-2-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-2 executing the task for order=2
+2017-11-08 15:26:16.345  INFO 4672 --- [pool-2-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-5 executing the task for order=5
+2017-11-08 15:26:16.345  INFO 4672 --- [pool-2-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-3 executing the task for order=3
+2017-11-08 15:26:16.346  INFO 4672 --- [pool-2-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-2-thread-1 executing the task for order=1
+2017-11-08 15:26:16.349  INFO 4672 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:26:16.353  INFO 4672 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:26:16.373  INFO 4672 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.086 seconds (JVM running for 4.571)
+2017-11-08 15:51:31.677  INFO 6176 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6176 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:51:31.680 DEBUG 6176 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:51:31.680  INFO 6176 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:51:31.757  INFO 6176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:51:31 IST 2017]; root of context hierarchy
+2017-11-08 15:51:33.986  INFO 6176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:51:34.004  INFO 6176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:51:34.005  INFO 6176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:51:34.179  INFO 6176 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:51:34.180  INFO 6176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2427 ms
+2017-11-08 15:51:34.411  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:51:34.416  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:51:34.416  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:51:34.416  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:51:34.418  INFO 6176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:51:34.974  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:51:31 IST 2017]; root of context hierarchy
+2017-11-08 15:51:35.051  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:51:35.053  INFO 6176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:51:35.097  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:51:35.098  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:51:35.140  INFO 6176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:51:35.311  INFO 6176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:51:35.407  INFO 6176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:51:35.411 DEBUG 6176 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:51:35.424  INFO 6176 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 15:51:35.425  INFO 6176 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 15:51:35.425  INFO 6176 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 15:51:35.425  INFO 6176 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 15:51:35.426  INFO 6176 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 15:51:35.426  INFO 6176 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 15:51:35.428  INFO 6176 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 15:51:35.429  INFO 6176 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 15:51:35.429  INFO 6176 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=4
+2017-11-08 15:51:35.430  INFO 6176 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=3
+2017-11-08 15:51:35.430  INFO 6176 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:51:35.433  INFO 6176 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.129 seconds (JVM running for 4.613)
+2017-11-08 15:51:35.437  INFO 6176 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:53:15.298  INFO 7936 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7936 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:53:15.301 DEBUG 7936 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:53:15.302  INFO 7936 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:53:15.383  INFO 7936 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:53:15 IST 2017]; root of context hierarchy
+2017-11-08 15:53:17.775  INFO 7936 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:53:17.798  INFO 7936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:53:17.800  INFO 7936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:53:17.953  INFO 7936 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:53:17.954  INFO 7936 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2574 ms
+2017-11-08 15:53:18.153  INFO 7936 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:53:18.159  INFO 7936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:53:18.160  INFO 7936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:53:18.160  INFO 7936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:53:18.162  INFO 7936 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:53:18.683  INFO 7936 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 15:53:15 IST 2017]; root of context hierarchy
+2017-11-08 15:53:18.772  INFO 7936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:53:18.774  INFO 7936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:53:18.816  INFO 7936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:53:18.817  INFO 7936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:53:18.872  INFO 7936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:53:19.092  INFO 7936 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:53:19.173  INFO 7936 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:53:19.176 DEBUG 7936 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:53:19.187  INFO 7936 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 15:53:19.188  INFO 7936 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 15:53:19.188  INFO 7936 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 15:53:19.189  INFO 7936 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 15:53:19.189  INFO 7936 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 15:53:19.189  INFO 7936 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 15:53:19.200  INFO 7936 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 15:53:19.200  INFO 7936 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 15:53:19.200  INFO 7936 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 15:53:19.201  INFO 7936 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 15:53:19.206  INFO 7936 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 15:53:19.206  INFO 7936 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 15:53:19.207  INFO 7936 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 15:53:19.207  INFO 7936 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 15:53:19.208  INFO 7936 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 15:53:19.210  INFO 7936 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 15:53:19.212  INFO 7936 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.337 seconds (JVM running for 4.766)
+2017-11-08 15:53:19.213  INFO 7936 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 15:58:06.202  INFO 6708 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6708 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 15:58:06.208 DEBUG 6708 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 15:58:06.209  INFO 6708 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 15:58:06.351  INFO 6708 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 15:58:06 IST 2017]; root of context hierarchy
+2017-11-08 15:58:08.882  INFO 6708 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 15:58:08.899  INFO 6708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 15:58:08.900  INFO 6708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 15:58:09.099  INFO 6708 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 15:58:09.100  INFO 6708 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2753 ms
+2017-11-08 15:58:09.414  INFO 6708 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 15:58:09.424  INFO 6708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 15:58:09.424  INFO 6708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 15:58:09.425  INFO 6708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 15:58:09.428  INFO 6708 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 15:58:10.266  INFO 6708 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 15:58:06 IST 2017]; root of context hierarchy
+2017-11-08 15:58:10.468  INFO 6708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 15:58:10.470  INFO 6708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 15:58:10.527  INFO 6708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:58:10.527  INFO 6708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:58:10.600  INFO 6708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 15:58:11.142  INFO 6708 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 15:58:11.259  INFO 6708 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 15:58:11.262 DEBUG 6708 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 15:58:11.280  INFO 6708 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 15:58:11.302  INFO 6708 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 15:58:11.302  INFO 6708 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 15:58:11.309  INFO 6708 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 15:58:11.309  INFO 6708 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:01:34.657  INFO 7392 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7392 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:01:34.660 DEBUG 7392 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:01:34.660  INFO 7392 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:01:34.840  INFO 7392 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:01:34 IST 2017]; root of context hierarchy
+2017-11-08 16:01:37.007  INFO 7392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:01:37.020  INFO 7392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:01:37.021  INFO 7392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:01:37.224  INFO 7392 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:01:37.224  INFO 7392 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2387 ms
+2017-11-08 16:01:37.419  INFO 7392 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:01:37.423  INFO 7392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:01:37.424  INFO 7392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:01:37.424  INFO 7392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:01:37.426  INFO 7392 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:01:37.868  INFO 7392 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:01:34 IST 2017]; root of context hierarchy
+2017-11-08 16:01:37.950  INFO 7392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:01:37.952  INFO 7392 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:01:37.992  INFO 7392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:01:37.997  INFO 7392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:01:38.041  INFO 7392 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:01:38.235  INFO 7392 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:01:38.313  INFO 7392 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:01:38.316 DEBUG 7392 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:01:38.331  INFO 7392 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:01:38.332  INFO 7392 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 16:01:38.332  INFO 7392 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:01:38.333  INFO 7392 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:01:38.343  INFO 7392 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:01:38.345  INFO 7392 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=3
+2017-11-08 16:01:38.345  INFO 7392 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:01:38.344  INFO 7392 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:01:38.346  INFO 7392 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=3
+2017-11-08 16:01:38.352  INFO 7392 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:01:38.353  INFO 7392 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:01:38.355  INFO 7392 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.072 seconds (JVM running for 4.567)
+2017-11-08 16:01:38.355  INFO 7392 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:02:13.720  INFO 7372 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7372 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:02:13.730 DEBUG 7372 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:02:13.731  INFO 7372 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:02:13.797  INFO 7372 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:02:13 IST 2017]; root of context hierarchy
+2017-11-08 16:02:16.335  INFO 7372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:02:16.348  INFO 7372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:02:16.352  INFO 7372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:02:16.554  INFO 7372 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:02:16.554  INFO 7372 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2761 ms
+2017-11-08 16:02:16.810  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:02:16.817  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:02:16.818  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:02:16.818  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:02:16.820  INFO 7372 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:02:17.573  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:02:13 IST 2017]; root of context hierarchy
+2017-11-08 16:02:17.670  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:02:17.673  INFO 7372 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:02:17.728  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:02:17.729  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:02:17.783  INFO 7372 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:02:18.175  INFO 7372 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:02:18.247  INFO 7372 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:02:18.250 DEBUG 7372 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:02:18.260  INFO 7372 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:02:18.261  INFO 7372 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:02:18.297  INFO 7372 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:02:18.297  INFO 7372 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:02:18.298  INFO 7372 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:02:33.262  INFO 7372 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 20.107 seconds (JVM running for 20.682)
+2017-11-08 16:03:00.447  INFO 7372 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:03:00.447  INFO 7372 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:03:01.196  INFO 7372 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=2
+2017-11-08 16:03:01.196  INFO 7372 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:03:01.755  INFO 7372 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=4
+2017-11-08 16:03:01.755  INFO 7372 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:03:02.299  INFO 7372 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:03:02.301  INFO 7372 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:03:03.299  INFO 7372 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=5
+2017-11-08 16:03:03.299  INFO 7372 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:03:56.739  INFO 7360 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7360 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:03:56.755 DEBUG 7360 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:03:56.756  INFO 7360 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:03:56.921  INFO 7360 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:03:56 IST 2017]; root of context hierarchy
+2017-11-08 16:03:59.097  INFO 7360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:03:59.115  INFO 7360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:03:59.117  INFO 7360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:03:59.324  INFO 7360 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:03:59.324  INFO 7360 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2419 ms
+2017-11-08 16:03:59.530  INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:03:59.535  INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:03:59.536  INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:03:59.536  INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:03:59.537  INFO 7360 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:04:00.586  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:03:56 IST 2017]; root of context hierarchy
+2017-11-08 16:04:00.682  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:04:00.684  INFO 7360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:04:00.743  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:04:00.744  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:04:00.813  INFO 7360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:04:01.245  INFO 7360 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:04:01.360  INFO 7360 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:04:01.363 DEBUG 7360 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:04:01.467  INFO 7360 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:04:01.468  INFO 7360 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:04:01.472  INFO 7360 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:04:01.472  INFO 7360 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:04:01.473  INFO 7360 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:05:03.151  INFO 5216 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 5216 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:05:03.154 DEBUG 5216 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:05:03.154  INFO 5216 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:05:03.302  INFO 5216 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:05:03 IST 2017]; root of context hierarchy
+2017-11-08 16:05:05.501  INFO 5216 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:05:05.519  INFO 5216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:05:05.520  INFO 5216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:05:05.683  INFO 5216 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:05:05.690  INFO 5216 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2391 ms
+2017-11-08 16:05:05.895  INFO 5216 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:05:05.898  INFO 5216 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:05:05.899  INFO 5216 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:05:05.899  INFO 5216 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:05:05.901  INFO 5216 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:05:06.419  INFO 5216 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:05:03 IST 2017]; root of context hierarchy
+2017-11-08 16:05:06.494  INFO 5216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:05:06.496  INFO 5216 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:05:06.523  INFO 5216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:06.523  INFO 5216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:06.557  INFO 5216 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:06.752  INFO 5216 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:05:06.826  INFO 5216 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:05:06.831 DEBUG 5216 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:05:06.841  INFO 5216 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:05:06.842  INFO 5216 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 16:05:06.842  INFO 5216 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:05:06.842  INFO 5216 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:05:06.843  INFO 5216 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:05:06.843  INFO 5216 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:05:06.843  INFO 5216 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:05:06.846  INFO 5216 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=1
+2017-11-08 16:05:06.846  INFO 5216 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:05:06.846  INFO 5216 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:05:06.846  INFO 5216 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=3
+2017-11-08 16:05:06.847  INFO 5216 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:05:06.847  INFO 5216 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:05:06.848  INFO 5216 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=3
+2017-11-08 16:05:06.850  INFO 5216 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:05:06.851  INFO 5216 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:05:06.853  INFO 5216 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.084 seconds (JVM running for 4.555)
+2017-11-08 16:05:06.855  INFO 5216 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:05:28.086  INFO 1572 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 1572 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:05:28.158 DEBUG 1572 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:05:28.159  INFO 1572 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:05:28.250  INFO 1572 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:05:28 IST 2017]; root of context hierarchy
+2017-11-08 16:05:30.837  INFO 1572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:05:30.858  INFO 1572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:05:30.860  INFO 1572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:05:31.064  INFO 1572 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:05:31.065  INFO 1572 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2820 ms
+2017-11-08 16:05:31.313  INFO 1572 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:05:31.318  INFO 1572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:05:31.318  INFO 1572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:05:31.319  INFO 1572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:05:31.321  INFO 1572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:05:32.135  INFO 1572 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:05:28 IST 2017]; root of context hierarchy
+2017-11-08 16:05:32.243  INFO 1572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:05:32.245  INFO 1572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:05:32.302  INFO 1572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:32.302  INFO 1572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:32.365  INFO 1572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:05:32.716  INFO 1572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:05:32.811  INFO 1572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:05:32.814 DEBUG 1572 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:05:32.825  INFO 1572 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:05:32.826  INFO 1572 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:05:32.836  INFO 1572 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:05:32.836  INFO 1572 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:05:32.836  INFO 1572 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:05:38.907  INFO 1572 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=2
+2017-11-08 16:05:38.907  INFO 1572 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:05:39.952  INFO 1572 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:05:39.952  INFO 1572 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:05:40.562  INFO 1572 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:05:40.563  INFO 1572 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:05:41.045  INFO 1572 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=4
+2017-11-08 16:05:41.046  INFO 1572 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:05:41.411  INFO 1572 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=5
+2017-11-08 16:05:41.411  INFO 1572 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:05:41.412  INFO 1572 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:05:41.423  INFO 1572 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 13.736 seconds (JVM running for 14.368)
+2017-11-08 16:05:46.566  INFO 1572 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:13:56.969  INFO 7760 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7760 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:13:56.983 DEBUG 7760 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:13:56.983  INFO 7760 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:13:57.111  INFO 7760 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:13:57 IST 2017]; root of context hierarchy
+2017-11-08 16:13:59.607  INFO 7760 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:13:59.627  INFO 7760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:13:59.628  INFO 7760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:13:59.822  INFO 7760 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:13:59.823  INFO 7760 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2715 ms
+2017-11-08 16:14:00.108  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:14:00.113  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:14:00.114  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:14:00.114  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:14:00.116  INFO 7760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:14:00.994  INFO 7760 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:13:57 IST 2017]; root of context hierarchy
+2017-11-08 16:14:01.110  INFO 7760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:14:01.112  INFO 7760 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:14:01.158  INFO 7760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:14:01.158  INFO 7760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:14:01.212  INFO 7760 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:14:01.659  INFO 7760 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:14:01.748  INFO 7760 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:14:01.751 DEBUG 7760 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:14:01.765  INFO 7760 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:14:01.766  INFO 7760 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:14:01.768  INFO 7760 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:14:01.769  INFO 7760 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:14:01.769  INFO 7760 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:14:16.768  INFO 7760 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 20.245 seconds (JVM running for 20.814)
+2017-11-08 16:14:41.917  INFO 7760 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:14:41.924  INFO 7760 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:17:21.520  INFO 7760 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:17:37.375  INFO 7760 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:17:47.261  INFO 7760 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:17:47.664  INFO 7760 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:17:58.138  INFO 7760 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:17:58.139  INFO 7760 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:18:00.313  INFO 7760 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=3
+2017-11-08 16:18:00.313  INFO 7760 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:18:32.011  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 2424 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:18:32.018 DEBUG 2424 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:18:32.018  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:18:32.118  INFO 2424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:18:32 IST 2017]; root of context hierarchy
+2017-11-08 16:18:34.574  INFO 2424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:18:34.594  INFO 2424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:18:34.595  INFO 2424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:18:34.835  INFO 2424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:18:34.836  INFO 2424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2721 ms
+2017-11-08 16:18:35.109  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:18:35.113  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:18:35.114  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:18:35.114  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:18:35.114  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:18:36.050  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:18:32 IST 2017]; root of context hierarchy
+2017-11-08 16:18:36.157  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:18:36.159  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:18:36.214  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:18:36.214  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:18:36.287  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:18:36.924  INFO 2424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:18:37.064  INFO 2424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:18:37.067 DEBUG 2424 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:18:37.077  INFO 2424 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:18:37.078  INFO 2424 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:18:37.117  INFO 2424 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:18:37.118  INFO 2424 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:18:37.119  INFO 2424 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:18:39.078  INFO 2424 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:18:39.079  INFO 2424 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:18:39.838  INFO 2424 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=4
+2017-11-08 16:18:39.839  INFO 2424 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:18:39.985  INFO 2424 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:18:39.986  INFO 2424 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:18:40.134  INFO 2424 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:18:40.134  INFO 2424 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:18:40.534  INFO 2424 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:18:40.534  INFO 2424 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:18:40.539  INFO 2424 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:18:40.557  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 9.03 seconds (JVM running for 9.666)
+2017-11-08 16:18:44.545  INFO 2424 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:20:08.192  INFO 5068 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 5068 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:20:08.195 DEBUG 5068 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:20:08.196  INFO 5068 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:20:08.332  INFO 5068 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:20:08 IST 2017]; root of context hierarchy
+2017-11-08 16:20:10.566  INFO 5068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:20:10.582  INFO 5068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:20:10.583  INFO 5068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:20:10.763  INFO 5068 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:20:10.764  INFO 5068 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2436 ms
+2017-11-08 16:20:10.971  INFO 5068 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:20:10.975  INFO 5068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:20:10.975  INFO 5068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:20:10.976  INFO 5068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:20:10.976  INFO 5068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:20:11.449  INFO 5068 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:20:08 IST 2017]; root of context hierarchy
+2017-11-08 16:20:11.529  INFO 5068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:20:11.531  INFO 5068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:20:11.570  INFO 5068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:20:11.571  INFO 5068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:20:11.611  INFO 5068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:20:11.783  INFO 5068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:20:11.855  INFO 5068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:20:11.859 DEBUG 5068 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:20:11.872  INFO 5068 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:20:11.873  INFO 5068 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:20:11.873  INFO 5068 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:20:11.874  INFO 5068 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:20:11.874  INFO 5068 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:20:11.874  INFO 5068 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:20:11.875  INFO 5068 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:20:11.875  INFO 5068 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:20:11.875  INFO 5068 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=3
+2017-11-08 16:20:11.875  INFO 5068 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:20:11.878  INFO 5068 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:20:11.879  INFO 5068 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:20:11.879  INFO 5068 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:20:11.880  INFO 5068 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:20:11.884  INFO 5068 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:20:11.885  INFO 5068 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:20:11.887  INFO 5068 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 4.094 seconds (JVM running for 4.539)
+2017-11-08 16:20:11.898  INFO 5068 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:22:10.991  INFO 6520 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6520 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:22:10.996 DEBUG 6520 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:22:10.997  INFO 6520 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:22:11.114  INFO 6520 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:22:11 IST 2017]; root of context hierarchy
+2017-11-08 16:22:13.429  INFO 6520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:22:13.447  INFO 6520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:22:13.449  INFO 6520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:22:13.687  INFO 6520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:22:13.687  INFO 6520 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2597 ms
+2017-11-08 16:22:13.974  INFO 6520 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:22:13.981  INFO 6520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:22:13.982  INFO 6520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:22:13.982  INFO 6520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:22:13.984  INFO 6520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:22:14.747  INFO 6520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:22:11 IST 2017]; root of context hierarchy
+2017-11-08 16:22:14.840  INFO 6520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:22:14.842  INFO 6520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:22:14.893  INFO 6520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:22:14.894  INFO 6520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:22:14.953  INFO 6520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:22:15.313  INFO 6520 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:22:15.386  INFO 6520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:22:15.414 DEBUG 6520 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:22:15.429  INFO 6520 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:22:15.429  INFO 6520 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:22:15.445  INFO 6520 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:22:15.446  INFO 6520 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:22:15.446  INFO 6520 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:22:20.521  INFO 6520 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:22:20.522  INFO 6520 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:22:33.073  INFO 6520 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:22:33.073  INFO 6520 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:22:59.882  INFO 6520 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=4
+2017-11-08 16:23:00.348  INFO 6520 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:23:37.570  INFO 6520 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:23:37.571  INFO 6520 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:23:38.804  INFO 6520 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=2
+2017-11-08 16:23:38.805  INFO 6520 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:24:15.760  INFO 6328 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6328 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:24:15.783 DEBUG 6328 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:24:15.784  INFO 6328 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:24:15.874  INFO 6328 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:24:15 IST 2017]; root of context hierarchy
+2017-11-08 16:24:21.658  INFO 6304 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6304 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:24:21.661 DEBUG 6304 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:24:21.661  INFO 6304 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:24:21.877  INFO 6304 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:24:21 IST 2017]; root of context hierarchy
+2017-11-08 16:24:23.968  INFO 6304 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:24:23.984  INFO 6304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:24:23.986  INFO 6304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:24:24.168  INFO 6304 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:24:24.168  INFO 6304 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2294 ms
+2017-11-08 16:24:24.396  INFO 6304 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:24:24.401  INFO 6304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:24:24.401  INFO 6304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:24:24.402  INFO 6304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:24:24.403  INFO 6304 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:24:24.905  INFO 6304 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12028586: startup date [Wed Nov 08 16:24:21 IST 2017]; root of context hierarchy
+2017-11-08 16:24:24.984  INFO 6304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:24:24.986  INFO 6304 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:24:25.035  INFO 6304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:24:25.036  INFO 6304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:24:25.080  INFO 6304 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:24:25.240  INFO 6304 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:24:25.346  INFO 6304 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:24:25.351 DEBUG 6304 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:24:25.362  INFO 6304 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:24:25.363  INFO 6304 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:24:25.363  INFO 6304 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:24:25.364  INFO 6304 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:24:25.364  INFO 6304 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:24:25.364  INFO 6304 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:24:25.368  INFO 6304 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:24:25.368  INFO 6304 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:24:25.368  INFO 6304 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:24:25.368  INFO 6304 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:24:25.368  INFO 6304 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:24:25.369  INFO 6304 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:24:25.369  INFO 6304 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:24:25.369  INFO 6304 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:24:25.371  INFO 6304 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:27:02.666  INFO 5264 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 5264 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:27:02.676 DEBUG 5264 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:27:02.676  INFO 5264 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:27:02.843  INFO 5264 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:27:02 IST 2017]; root of context hierarchy
+2017-11-08 16:27:05.760  INFO 5264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:27:05.783  INFO 5264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:27:05.784  INFO 5264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:27:05.977  INFO 5264 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:27:05.977  INFO 5264 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3137 ms
+2017-11-08 16:27:06.269  INFO 5264 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:27:06.275  INFO 5264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:27:06.276  INFO 5264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:27:06.276  INFO 5264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:27:06.278  INFO 5264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:27:07.117  INFO 5264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:27:02 IST 2017]; root of context hierarchy
+2017-11-08 16:27:07.225  INFO 5264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:27:07.227  INFO 5264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:27:07.289  INFO 5264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:27:07.290  INFO 5264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:27:07.346  INFO 5264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:27:07.713  INFO 5264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:27:07.861  INFO 5264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:27:07.866 DEBUG 5264 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:27:07.896  INFO 5264 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:27:07.898  INFO 5264 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:27:07.907  INFO 5264 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:27:07.907  INFO 5264 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:27:07.907  INFO 5264 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:27:22.192  INFO 5264 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:27:22.773  INFO 5264 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:27:22.895  INFO 5264 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 20.88 seconds (JVM running for 21.535)
+2017-11-08 16:27:24.360  INFO 5264 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:27:27.024  INFO 5264 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:27:28.248  INFO 5264 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:27:29.088  INFO 5264 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:27:30.759  INFO 5264 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:02.718  INFO 5264 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:04.486  INFO 5264 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:06.437  INFO 5264 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:46.986  INFO 7872 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 7872 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:28:46.992 DEBUG 7872 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:28:46.992  INFO 7872 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:28:47.123  INFO 7872 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:28:47 IST 2017]; root of context hierarchy
+2017-11-08 16:28:49.538  INFO 7872 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:28:49.553  INFO 7872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:28:49.554  INFO 7872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:28:49.791  INFO 7872 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:28:49.792  INFO 7872 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2672 ms
+2017-11-08 16:28:50.034  INFO 7872 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:28:50.045  INFO 7872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:28:50.048  INFO 7872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:28:50.048  INFO 7872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:28:50.049  INFO 7872 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:28:50.962  INFO 7872 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:28:47 IST 2017]; root of context hierarchy
+2017-11-08 16:28:51.066  INFO 7872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:28:51.068  INFO 7872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:28:51.125  INFO 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:28:51.126  INFO 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:28:51.190  INFO 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:28:51.606  INFO 7872 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:28:51.681  INFO 7872 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:28:51.685 DEBUG 7872 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:28:51.702  INFO 7872 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:28:51.703  INFO 7872 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:28:51.703  INFO 7872 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:28:51.708  INFO 7872 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:51.709  INFO 7872 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:28:51.709  INFO 7872 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:28:51.709  INFO 7872 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:51.737  INFO 7872 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:28:51.738  INFO 7872 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:28:51.743  INFO 7872 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:28:51.749  INFO 7872 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:28:51.751  INFO 7872 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 5.244 seconds (JVM running for 5.761)
+2017-11-08 16:28:59.824  INFO 7872 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:31:04.009  INFO 5268 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 5268 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:31:04.039 DEBUG 5268 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:31:04.040  INFO 5268 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:31:04.114  INFO 5268 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:31:04 IST 2017]; root of context hierarchy
+2017-11-08 16:31:06.716  INFO 5268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:31:06.740  INFO 5268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:31:06.742  INFO 5268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:31:06.937  INFO 5268 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:31:06.938  INFO 5268 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2828 ms
+2017-11-08 16:31:07.209  INFO 5268 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:31:07.215  INFO 5268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:31:07.216  INFO 5268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:31:07.216  INFO 5268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:31:07.218  INFO 5268 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:31:08.286  INFO 5268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:31:04 IST 2017]; root of context hierarchy
+2017-11-08 16:31:08.392  INFO 5268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:31:08.394  INFO 5268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:31:08.452  INFO 5268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:31:08.452  INFO 5268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:31:08.522  INFO 5268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:31:08.940  INFO 5268 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:31:09.025  INFO 5268 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:31:09.028 DEBUG 5268 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:31:09.059  INFO 5268 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:31:09.060  INFO 5268 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= BUY, symbol=AIRTELgroup order id=1
+2017-11-08 16:31:09.060  INFO 5268 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:31:09.065  INFO 5268 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:31:09.065  INFO 5268 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:31:09.065  INFO 5268 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:31:09.065  INFO 5268 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:31:09.066  INFO 5268 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:31:09.066  INFO 5268 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:31:09.066  INFO 5268 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:31:09.067  INFO 5268 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:31:09.067  INFO 5268 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:31:09.083  INFO 5268 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:31:09.083  INFO 5268 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=4
+2017-11-08 16:31:09.083  INFO 5268 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=4
+2017-11-08 16:31:09.084  INFO 5268 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:31:09.085  INFO 5268 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 5.532 seconds (JVM running for 6.133)
+2017-11-08 16:31:12.137  INFO 5268 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:32:58.008  INFO 1012 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 1012 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:32:58.052 DEBUG 1012 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:32:58.052  INFO 1012 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:32:58.250  INFO 1012 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:32:58 IST 2017]; root of context hierarchy
+2017-11-08 16:33:00.759  INFO 1012 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:33:00.782  INFO 1012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:33:00.783  INFO 1012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:33:00.996  INFO 1012 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:33:00.997  INFO 1012 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2749 ms
+2017-11-08 16:33:01.282  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:33:01.286  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:33:01.287  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:33:01.287  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:33:01.287  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:33:02.013  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:32:58 IST 2017]; root of context hierarchy
+2017-11-08 16:33:02.115  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:33:02.116  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:33:02.168  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:33:02.169  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:33:02.226  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:33:02.568  INFO 1012 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:33:02.648  INFO 1012 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:33:02.683 DEBUG 1012 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:33:02.706  INFO 1012 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:33:02.707  INFO 1012 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= SELL, symbol=AIRTELgroup order id=1
+2017-11-08 16:33:02.707  INFO 1012 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:33:02.713  INFO 1012 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:33:02.714  INFO 1012 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:33:02.714  INFO 1012 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:33:02.715  INFO 1012 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:33:02.715  INFO 1012 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:33:02.715  INFO 1012 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:33:02.716  INFO 1012 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:33:02.716  INFO 1012 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:33:02.716  INFO 1012 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:33:02.717  INFO 1012 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:33:02.717  INFO 1012 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=4
+2017-11-08 16:33:02.718  INFO 1012 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=4
+2017-11-08 16:33:02.723  INFO 1012 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:33:02.725  INFO 1012 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 5.335 seconds (JVM running for 5.99)
+2017-11-08 16:33:05.676  INFO 1012 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:33:06.496  INFO 1012 --- [Thread-5] c.s.wellington.service.RuleGenerator     : warning message added to groupOrderWarningCache=Contra transaction codes found forGROUPED_ORDER1 and GROUPED_ORDER4
+2017-11-08 16:34:19.133  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 2424 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:34:19.147 DEBUG 2424 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:34:19.147  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:34:19.309  INFO 2424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:34:19 IST 2017]; root of context hierarchy
+2017-11-08 16:34:21.648  INFO 2424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:34:21.669  INFO 2424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:34:21.671  INFO 2424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:34:21.910  INFO 2424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:34:21.911  INFO 2424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2606 ms
+2017-11-08 16:34:22.260  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:34:22.265  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:34:22.266  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:34:22.267  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:34:22.269  INFO 2424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:34:23.192  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:34:19 IST 2017]; root of context hierarchy
+2017-11-08 16:34:23.302  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:34:23.305  INFO 2424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:34:23.367  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:23.367  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:23.429  INFO 2424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:23.869  INFO 2424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:34:23.946  INFO 2424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:34:23.949 DEBUG 2424 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:34:23.966  INFO 2424 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:34:23.972  INFO 2424 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= SELL, symbol=AIRTELgroup order id=1
+2017-11-08 16:34:23.972  INFO 2424 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:34:23.973  INFO 2424 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:34:23.973  INFO 2424 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=2
+2017-11-08 16:34:23.973  INFO 2424 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:34:23.981  INFO 2424 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:34:23.981  INFO 2424 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=3
+2017-11-08 16:34:23.981  INFO 2424 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:34:23.982  INFO 2424 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:34:23.982  INFO 2424 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=4
+2017-11-08 16:34:23.982  INFO 2424 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=4
+2017-11-08 16:34:23.982  INFO 2424 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:34:23.983  INFO 2424 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=4
+2017-11-08 16:34:23.983  INFO 2424 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=4
+2017-11-08 16:34:24.018  INFO 2424 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:34:24.020  INFO 2424 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 5.409 seconds (JVM running for 5.94)
+2017-11-08 16:34:27.322  INFO 2424 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:34:27.786  INFO 2424 --- [Thread-5] c.s.wellington.service.RuleGenerator     : warning message added to groupOrderWarningCache=Contra transaction codes found forGROUPED_ORDER1 and GROUPED_ORDER2
+2017-11-08 16:34:42.465  INFO 6684 --- [main] c.s.wellington.WellingtonApplication     : Starting WellingtonApplication on dluwell78716 with PID 6684 (C:\Users\jaro13\Desktop\wellington\target\classes started by jaro13 in C:\Users\jaro13\Desktop\wellington)
+2017-11-08 16:34:42.471 DEBUG 6684 --- [main] c.s.wellington.WellingtonApplication     : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-08 16:34:42.472  INFO 6684 --- [main] c.s.wellington.WellingtonApplication     : No active profile set, falling back to default profiles: default
+2017-11-08 16:34:42.552  INFO 6684 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:34:42 IST 2017]; root of context hierarchy
+2017-11-08 16:34:45.157  INFO 6684 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8990 (http)
+2017-11-08 16:34:45.175  INFO 6684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-08 16:34:45.177  INFO 6684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-08 16:34:45.385  INFO 6684 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-08 16:34:45.386  INFO 6684 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2838 ms
+2017-11-08 16:34:45.693  INFO 6684 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-08 16:34:45.703  INFO 6684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-08 16:34:45.706  INFO 6684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-08 16:34:45.707  INFO 6684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-08 16:34:45.709  INFO 6684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-08 16:34:46.560  INFO 6684 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4310d43: startup date [Wed Nov 08 16:34:42 IST 2017]; root of context hierarchy
+2017-11-08 16:34:46.666  INFO 6684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-08 16:34:46.668  INFO 6684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-08 16:34:46.733  INFO 6684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:46.741  INFO 6684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:46.801  INFO 6684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-08 16:34:47.147  INFO 6684 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-08 16:34:47.267  INFO 6684 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8990 (http)
+2017-11-08 16:34:47.278 DEBUG 6684 --- [main] c.s.wellington.WellingtonApplication     : Starting the application....
+2017-11-08 16:34:47.289  INFO 6684 --- [pool-1-thread-2] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-2 executing the task for order=2
+2017-11-08 16:34:47.289  INFO 6684 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= SELL, symbol=AIRTELgroup order id=1
+2017-11-08 16:34:47.290  INFO 6684 --- [pool-1-thread-2] c.s.wellington.service.GroupingService   : group orders size=1
+2017-11-08 16:34:47.292  INFO 6684 --- [pool-1-thread-5] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-5 executing the task for order=5
+2017-11-08 16:34:47.292  INFO 6684 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group order entry created with securityId=3, transactionType= SELL, symbol=ICICIgroup order id=2
+2017-11-08 16:34:47.292  INFO 6684 --- [pool-1-thread-5] c.s.wellington.service.GroupingService   : group orders size=2
+2017-11-08 16:34:47.292  INFO 6684 --- [pool-1-thread-3] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-3 executing the task for order=3
+2017-11-08 16:34:47.293  INFO 6684 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:34:47.297  INFO 6684 --- [pool-1-thread-3] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:34:47.298  INFO 6684 --- [pool-1-thread-1] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-1 executing the task for order=1
+2017-11-08 16:34:47.301  INFO 6684 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group order entry created with securityId=1, transactionType= BUY, symbol=IDEAgroup order id=3
+2017-11-08 16:34:47.302  INFO 6684 --- [pool-1-thread-1] c.s.wellington.service.GroupingService   : group orders size=3
+2017-11-08 16:34:47.330  INFO 6684 --- [pool-1-thread-4] c.s.wellington.filereader.CSVFileReader  : Thread pool-1-thread-4 executing the task for order=4
+2017-11-08 16:34:47.331  INFO 6684 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group order entry created with securityId=2, transactionType= BUY, symbol=AIRTELgroup order id=4
+2017-11-08 16:34:47.331  INFO 6684 --- [pool-1-thread-4] c.s.wellington.service.GroupingService   : group orders size=4
+2017-11-08 16:34:47.332  INFO 6684 --- [main] c.s.wellington.filereader.CSVFileReader  : grouping of orders done,starting executing the rules
+2017-11-08 16:34:47.334  INFO 6684 --- [main] c.s.wellington.WellingtonApplication     : Started WellingtonApplication in 5.384 seconds (JVM running for 5.998)
+2017-11-08 16:34:51.500  INFO 6684 --- [Thread-5] c.s.wellington.service.RuleGenerator     : Message received, begin generating orderWarningCache
+2017-11-08 16:35:38.891  INFO 6684 --- [Thread-5] c.s.wellington.service.RuleGenerator     : warning message added to groupOrderWarningCache=Contra transaction codes found forGROUPED_ORDER4 and GROUPED_ORDER1
